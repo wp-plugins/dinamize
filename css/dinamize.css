@@ -1,0 +1,16 @@
+form.dinamizeForm table {
+	border: 0px !important;
+}
+
+form.dinamizeForm table td {
+	border: 0px !important;
+}
+
+form.dinamizeForm .form-msg-error {
+	border: 1px solid #f00;
+	background-color: #fee;
+	font-size: 11px;
+	font-family: Arial;
+	padding: 3px;
+	margin-top: 4px;
+}
