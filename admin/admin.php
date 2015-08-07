@@ -306,7 +306,7 @@ function dinamize_get_form_by_hash($hash) {
 	);
 
 	
-	$ret = wp_remote_get("http://download.josue.dev.com/d/".$hash, $args);
+	$ret = wp_remote_get(DINAMIZE_DOWNLOAD_SERVICE.$hash, $args);
 	if (!is_array($ret)) {
 		$_SESSION["Dinamize_Form"]["err_msg"] = __("There was a communication error to download the form, please try again later.", "dinamize");
 		return false;

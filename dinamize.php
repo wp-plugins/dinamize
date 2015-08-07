@@ -13,6 +13,7 @@ License: GPLv2
 
 defined( 'ABSPATH' ) or die( 'Esse código não foi feito para todos' );
 define( 'DINAMIZE_PLUGIN_DIR', untrailingslashit( dirname( __FILE__ ) ) );
+define( 'DINAMIZE_DOWNLOAD_SERVICE', 'http://dl.dinamize.com/d/' );
 
 if ( ! defined( 'DINAMIZE_ADMIN_READ_CAPABILITY' ) ) {
 	define( 'DINAMIZE_ADMIN_READ_CAPABILITY', 'edit_posts' );
