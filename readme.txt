@@ -1,8 +1,9 @@
 === Dinamize ===
+Contributors: dinamize
 Tags: Dinamize, E-mail Marketing, Mail2Easy, Mail2Easy PRO
 Requires at least: 4.0
 Tested up to: 4.2.3
-Version: 1.0.1
+Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
