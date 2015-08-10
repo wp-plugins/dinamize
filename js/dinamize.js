@@ -43,7 +43,6 @@ function DinamizeValidateForm(form){
     });
 
     var enviar = (jQuery(form).find('.form-msg-error').length == 0);
-    alert(enviar);
     
     if (enviar) {
     	jQuery(form).find('.type_LVM').each(function() {
@@ -71,9 +70,7 @@ function DinamizeValidateForm(form){
         });
     }
 
-    alert(enviar);
-    return false;
-    //return enviar;
+    return enviar;
 }
 
 function DinamizeValidateEmail(email) {

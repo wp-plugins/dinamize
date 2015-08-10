@@ -25,7 +25,7 @@ class Dinamize_List_Form extends WP_List_Table {
 	function prepare_items( $page_size = 20 ) {
 		$per_page = $this->get_items_per_page( $page_size );
 	
-        if (!is_ajax()) {
+        if (!dinamize_is_ajax()) {
 			$this->_column_headers = $this->get_column_info();
         }
 	
@@ -56,7 +56,7 @@ class Dinamize_List_Form extends WP_List_Table {
 	
 		$this->items = Dinamize_Forms::find( $args );
 	
-        if (!is_ajax()) {
+        if (!dinamize_is_ajax()) {
 			$total_items = Dinamize_Forms::count();
 			$total_pages = ceil( $total_items / $per_page );
 	

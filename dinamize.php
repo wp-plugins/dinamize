@@ -60,6 +60,14 @@ function dinamize_load_textdomain() {
 	load_plugin_textdomain( 'dinamize', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
+function dinamize_is_ajax() {
+	if (function_exists('is_ajax')) {
+		return is_ajax();
+	}
+	
+	return (defined('DOING_AJAX') && DOING_AJAX);
+}
+
 add_action('init', 'dinamize_init', 1);
 add_action('wp_logout', 'dinamize_end');
 add_action('wp_login', 'dinamize_end');
